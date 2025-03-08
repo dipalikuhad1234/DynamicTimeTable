@@ -1,0 +1,29 @@
+﻿@model DynamicTimeTableGenerator.Models.TimeTable
+
+<div class="container mt-4">
+    <div class="d-flex align-items-center justify-content-between mb-2">
+        <h2 class="text-right">Final Timetable</h2>
+        <a href="/Timetable/CreateTimetable" class="btn btn-primary">Create New Timetable</a>
+    </div>
+    <table class="table table-bordered text-center">
+        <thead class="table-dark">
+            <tr>
+                @for (int i = 0; i < Model.WorkingDays; i++)
+                {
+                    <th>Day @(i + 1)</th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var row in Model.Timetable)
+            {
+                <tr>
+                    @foreach (var subject in row)
+                    {
+                        <td>@subject</td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

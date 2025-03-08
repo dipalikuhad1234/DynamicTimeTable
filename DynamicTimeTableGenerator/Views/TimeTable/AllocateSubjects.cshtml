@@ -1,0 +1,40 @@
+﻿@model DynamicTimeTableGenerator.Models.TimeTable
+
+<div class="container mt-4 mb-4">
+    <h2 class="text-center pb-3">Allocate Subject Hours</h2>
+    @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+    {
+        <div class="alert alert-danger text-center">
+            <span class="text-danger">@ViewBag.ErrorMessage</span>
+        </div>
+    }
+    <form method="post" asp-action="ViewTimetable" class="p-4 border rounded shadow bg-light">
+        <input type="hidden" asp-for="WorkingDays" />
+        <input type="hidden" asp-for="SubjectsPerDay" />
+        <input type="hidden" asp-for="TotalSubjects" />
+        <input type="hidden" asp-for="TotalHours" />
+
+        <p class="text-center font-weight-bold">Total Hours for Week: <b>@Model.TotalHours</b></p>
+
+        <div class="row">
+            @for (int i = 0; i < Model.TotalSubjects; i++)
+            {
+                <div class="col-md-6">
+                    <label>Subject Name:</label>
+                    <input type="text" asp-for="Subjects[@i].SubjectName" class="form-control mb-2" required />
+                    <span asp-validation-for="Subjects[@i].SubjectName" class="text-danger"></span>
+                </div>
+
+                <div class="col-md-6">
+                    <label>Hours:</label>
+                    <input type="number" asp-for="Subjects[@i].Hours" class="form-control mb-2" required min="1" />
+                    <span asp-validation-for="Subjects[@i].Hours" class="text-danger"></span>
+                </div>
+            }
+        </div>
+
+        <div class="text-center">
+            <button type="submit" class="btn btn-success mt-3">Generate Timetable</button>
+        </div>
+    </form>
+</div>

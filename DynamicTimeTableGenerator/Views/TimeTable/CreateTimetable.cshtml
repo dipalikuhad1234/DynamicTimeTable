@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Create Timetable";
+}
+
+<div class="container mt-4">
+    <h2 class="text-center pb-3">Create Your Timetable</h2>
+    <form method="post" asp-action="AllocateSubjects" class="p-4 border rounded shadow bg-light">
+        <div class="mb-3">
+            <label class="form-label">Number of Working Days:</label>
+            <input type="number" name="workingDays" min="1" max="7" required class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Number of Subjects per Day:</label>
+            <input type="number" name="subjectsPerDay" min="1" max="8" required class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Total Subjects:</label>
+            <input type="number" name="totalSubjects" min="1" required class="form-control" />
+        </div>
+
+        <div class="text-center">
+            <button type="submit" class="btn btn-success">Next</button>
+        </div>
+    </form>
+</div>
+
+
