@@ -46,8 +46,7 @@
               "RelativeToolTip": "DynamicTimeTableGenerator\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-06T17:59:52.73Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-06T17:59:52.73Z"
             },
             {
               "$type": "Document",
@@ -59,8 +58,7 @@
               "RelativeToolTip": "DynamicTimeTableGenerator\\Views\\TimeTable\\ViewTimetable.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-06T04:08:45.841Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-06T04:08:45.841Z"
             },
             {
               "$type": "Document",
@@ -72,8 +70,7 @@
               "RelativeToolTip": "DynamicTimeTableGenerator\\Views\\TimeTable\\AllocateSubjects.cshtml",
               "ViewState": "AgIAABgAAAAAAAAAAAAAACQAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-06T04:06:44.397Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-06T04:06:44.397Z"
             },
             {
               "$type": "Document",
@@ -98,8 +95,7 @@
               "RelativeToolTip": "DynamicTimeTableGenerator\\Controllers\\TimetableController.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAgwCYAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T04:02:08.943Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-06T04:02:08.943Z"
             },
             {
               "$type": "Document",
@@ -111,8 +107,7 @@
               "RelativeToolTip": "DynamicTimeTableGenerator\\Models\\TimeTable.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAiwBsAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T04:01:04.782Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-06T04:01:04.782Z"
             }
           ]
         }
